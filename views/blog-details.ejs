@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <%- include('common/head') %>
+    <link rel="stylesheet" href="../css/style.css">
+        <title><%= title %> </title>
+</head>
+
+<body>
+    <%- include("common/navbar") %>
+
+        <!--Main layout-->
+        <main class="mt-4 mb-5">
+            <div class="container">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-md-8 mb-4 m-auto">
+                        <!--Section: Post data-mdb-->
+                        <section class="border-bottom mb-4">
+                            <img src="/uploads/<%= artical.thumnail %> "
+                                class="img-fluid shadow-2-strong rounded-5 mb-4 detail-card-img" alt="" />
+
+                            <div class="row align-items-center mb-4">
+                                <div class="col-lg-6 text-center text-lg-start mb-3 m-lg-0">
+                                    <!-- <span> Published  by</span>
+                                    <a href="" class="text-dark">Anna</a> -->
+                                </div>
+
+                                <div class="col-lg-6 text-center text-lg-end">
+                                    <button type="button" class="btn btn-primary px-3 me-1"
+                                        style="background-color: #3b5998;">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary px-3 me-1"
+                                        style="background-color: #55acee;">
+                                        <i class="fab fa-twitter"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary px-3 me-1"
+                                        style="background-color: #0082ca;">
+                                        <i class="fab fa-linkedin"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary px-3 me-1">
+                                        <i class="fas fa-comments"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                        <!--Section: Post data-mdb-->
+
+                        <!--Section: Text-->
+                        <section>
+                            <h2><%= artical.title %> </h2>
+                            <p>
+                                <%= artical.description %> 
+                            </p>
+
+                           
+                        </section>
+                        <!--Section: Text-->
+
+                        <!--Section: Share buttons-->
+                        <section class="text-center border-top border-bottom py-4 mb-4">
+                            <p><strong>Share with your friends:</strong></p>
+
+                            <button type="button" class="btn btn-primary me-1" style="background-color: #3b5998;">
+                                <i class="fab fa-facebook-f"></i>
+                            </button>
+                            <button type="button" class="btn btn-primary me-1" style="background-color: #55acee;">
+                                <i class="fab fa-twitter"></i>
+                            </button>
+                            <button type="button" class="btn btn-primary me-1" style="background-color: #0082ca;">
+                                <i class="fab fa-linkedin"></i>
+                            </button>
+                            <button type="button" class="btn btn-primary me-1">
+                                <i class="fas fa-comments me-2"></i>Add comment
+                            </button>
+                        </section>
+                        <!--Section: Share buttons-->
+
+                        
+
+                        <!--Section: Comments-->
+                        <section class="border-bottom mb-3">
+                            <p class="text-center"><strong>Comments: 3</strong></p>
+
+                            <!-- Comment -->
+                            <div class="row mb-4">
+                                <div class="col-12">
+                                    <p class="mb-2"><strong>Marta Dolores</strong></p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio est ab iure
+                                        inventore dolorum consectetur? Molestiae aperiam atque quasi consequatur aut?
+                                        Repellendus alias dolor ad nam, soluta distinctio quis accusantium!
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        <!--Section: Comments-->
+
+                        <!--Section: Reply-->
+                        <section>
+                            <p class="text-center"><strong>Leave a reply</strong></p>
+
+                            <form>
+                                <!-- Name input -->
+                                <div class="form-outline mb-4">
+                                    <input type="text" id="form4Example1" class="form-control" />
+                                    <label class="form-label" for="form4Example1">Name</label>
+                                </div>
+
+                                <!-- Email input -->
+                                <div class="form-outline mb-4">
+                                    <input type="email" id="form4Example2" class="form-control" />
+                                    <label class="form-label" for="form4Example2">Email address</label>
+                                </div>
+
+                                <!-- Message input -->
+                                <div class="form-outline mb-4">
+                                    <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                                    <label class="form-label" for="form4Example3">Text</label>
+                                </div>
+
+                                <!-- Checkbox -->
+                                <div class="form-check d-flex justify-content-center mb-4">
+                                    <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4"
+                                        checked />
+                                    <label class="form-check-label" for="form4Example4">
+                                        Send me a copy of this comment
+                                    </label>
+                                </div>
+
+                                <!-- Submit button -->
+                                <button type="submit" class="btn btn-primary btn-block mb-4">
+                                    Publish
+                                </button>
+                            </form>
+                        </section>
+                        <!--Section: Reply-->
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                  
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </div>
+        </main>
+        <!--Main layout-->
+
+       
+        <%- include('common/footer') %>
+            <%- include('common/footerlink') %>
+
+</body>
+
+</html>

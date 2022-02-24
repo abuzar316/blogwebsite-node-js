@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <%- include('common/head') %>
+
+        <title>
+            <%= title %>
+        </title>
+</head>
+
+<body>
+    <%- include("common/navbar") %>
+        <!-- card start -->
+        <div class="container py-4">
+            <div class="row">
+                <% data.forEach((e)=>{%>
+                    <div class=" col-md-4">
+                        <div class="card my-4">
+                            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                                <img src="uploads/<%= e.thumnail %>" class="img-fluid card-img" />
+                                <a href="#!">
+                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"><%= e.title %></h5>
+                                <p class="card-text card-description">
+                                    <%= e.description %>
+                                </p>
+                                <a href="blog-details/<%= e._id %> "><button type="button" class="btn btn-primary">Read
+                                        More</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <% }) %>
+            </div>
+        </div>
+        <!-- card end -->
+        <%- include('common/footer') %>
+            <%- include('common/footerlink') %>
+
+</body>
+
+</html>

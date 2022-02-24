@@ -1,0 +1,29 @@
+@media(max-width:768px) {
+    .res-hide {
+        display: none;
+    }
+    .left-box {
+        order: 1;
+    }
+    .nav-bar {
+        justify-content: end;
+    }
+    /* .side-bar {
+        transform: translate( -100%, 0);
+    }
+    .main-body {
+        margin: 0;
+    } */
+    .nav-drop {
+        left: -137px;
+    }
+    .main-body {
+        margin-left: 0;
+    }
+    #myChart {
+        height: auto!important;
+    }
+    .ful-chart-b {
+        height: auto;
+    }
+}

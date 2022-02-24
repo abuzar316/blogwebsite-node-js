@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> </title>
+    <%- include('../common/head') %>
+        <%- include('common/head-link') %>
+</head>
+
+<body>
+    <!--**************************Navbar ******************************* -->
+    <!-- Navbar -->
+    <%- include("common/navbar") %>
+        <!-- Navbar -->
+        <!--**************************sideber ******************************* -->
+        <%- include("common/sidebar") %>
+            <!--**************************main-body ******************************* -->
+            <div class="main-body">
+                <div class="all-post">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover table-bordered ">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Image</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody class="">
+                                <% data.forEach((e , i)=> {%> 
+                                <tr>
+                                    <th><%= i+1 %> </th>
+                                    <th><img class="table-img" src="../uploads/<%= e.thumnail %>" alt=""></th>
+                                    <th><%= e.title %> </th>
+                                    <th class="text-center">
+                                        <a href="/edit-post/<%= e._id %>" class="text-success"><i class="fas fa-edit fa-lg mx-1"></i></a>
+                                        <a href="/delete/<%= e._id %>" class="text-danger"><i class="fas fa-trash fa-lg mx-1"></i></a>
+                                    </th>
+                                </tr>
+                                <% }) %> 
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <%- include("common/footerlink") %>
+                <%- include('../common/footerlink') %>
+</body>
+
+</html>

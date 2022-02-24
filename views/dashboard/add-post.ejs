@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deshboard</title>
+    <%- include('../common/head') %>
+        <%- include('common/head-link') %>
+</head>
+
+<body>
+    <!--**************************Navbar ******************************* -->
+    <!-- Navbar -->
+    <%- include("common/navbar") %>
+        <!-- Navbar -->
+        <!--**************************sideber ******************************* -->
+        <%- include("common/sidebar") %>
+            <!--**************************main-body ******************************* -->
+            <div class="main-body">
+                <div class="add-post pt-3">
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                            <input type="text" name="title" id="Posttitle" class="form-control" />
+                            <label class="form-label" for="Posttitle">Post Title</label>
+                        </div>
+                        <!-- Message input -->
+                        <div class="form-outline mb-4">
+                            <textarea class="form-control" name="description" id="form4Example3" rows="4"></textarea>
+                            <label class="form-label" for="form4Example3">Post Description</label>
+                        </div>
+                        <!-- Message input -->
+                        <div class="mb-4">
+                            <label class="form-label" for="customFile">Select Thumnail</label>
+                            <input type="file" name="thumnail" class="form-control" id="customFile" />
+                        </div>
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-primary ">Add Post</button>
+                    </form>
+                </div>
+            </div>
+
+            <%- include("common/footerlink") %>
+            <%- include('../common/footerlink') %>
+</body>
+
+</html>

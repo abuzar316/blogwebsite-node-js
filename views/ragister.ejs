@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ragister</title>
+    <%- include('common/head') %>
+</head>
+
+<body>
+    <div class="wrapper-login">
+        <div class="login shadow rounded">
+            <form action="" method="post">
+                 <!-- name input -->
+                 <div class="form-outline mb-4">
+                    <input type="text" id="form1Example2" name="name" class="form-control" />
+                    <label class="form-label"  for="form1Example2">name</label>
+                </div>
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                    <input type="text" id="form1Example3" name="mobile" class="form-control" />
+                    <label class="form-label"  for="form1Example3">Mobile</label>
+                </div>
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                    <input type="email" id="form1Example1" name="email" class="form-control" />
+                    <label class="form-label"  for="form1Example1">Email address</label>
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                    <input type="password" name="password" id="form1Example2" class="form-control" />
+                    <label class="form-label" for="form1Example2">Password</label>
+                </div>
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                    <input type="password" name="cpassword" id="form1Example2" class="form-control" />
+                    <label class="form-label" for="form1Example2">Password</label>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block">Ragister</button>
+            </form>
+        </div>
+    </div>
+    <%- include('common/footerlink') %>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* login page css start */
+.wrapper-login{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.wrapper-login .login{
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+}
+.card-description{
+    display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.detail-card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
